@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ATHLETIC TRANSFORMATION PROTOCOL — 365 Days</title>
+<meta name="description" content="A 365-day home training system with a real progression engine. Works offline; data stays in your browser.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Zilla+Slab:wght@400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  // apply saved theme before first paint to avoid a flash
+  try { var s = JSON.parse(localStorage.getItem('atp-state-v1') || '{}'); if (s.settings && s.settings.theme) document.documentElement.setAttribute('data-theme', s.settings.theme); } catch (e) {}
+</script>
+</head>
+<body>
+<div class="noise"></div>
+<header>
+  <div class="hwrap">
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle light and dark mode">☀ Light</button>
+    <div class="kicker">Private Training Terminal</div>
+    <h1>ATHLETIC TRANSFORMATION PROTOCOL</h1>
+    <div class="sub">365 DAYS. ONE TRANSFORMATION.</div>
+    <div class="fighter-card" id="fighterCard"></div>
+  </div>
+</header>
+<main>
+  <noscript><p>This app needs JavaScript enabled.</p></noscript>
+  <div id="banner"></div>
+  <div class="stats" id="stats"></div>
+  <nav class="top" id="nav" aria-label="Sections"></nav>
+  <div id="view"></div>
+</main>
+<footer>Training notes only, not medical advice. Stop any exercise that causes sharp or moderate pain. Progress is stored in this browser's local storage; use SYSTEM → Export to keep a backup.</footer>
+<div id="overlay"></div>
+<script src="js/library.js"></script>
+<script src="js/ex-upper.js"></script>
+<script src="js/ex-lower-core.js"></script>
+<script src="js/ex-other.js"></script>
+<script src="js/pathways.js"></script>
+<script src="js/programme-core.js"></script>
+<script src="js/programme-plan.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/engine-progress.js"></script>
+<script src="js/ui-lib.js"></script>
+<script src="js/ui-train.js"></script>
+<script src="js/ui-views.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

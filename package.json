@@ -1,0 +1,11 @@
+{
+  "name": "athletic-transformation-protocol",
+  "version": "1.0.0",
+  "description": "365-day home training system with a real progression engine. Static site, no build step.",
+  "private": true,
+  "scripts": {
+    "test": "node tests/test-engine.js",
+    "test:ui": "node tests/test-ui.js"
+  },
+  "devDependencies": { "jsdom": "^26.0.0" }
+}
